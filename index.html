@@ -142,7 +142,6 @@
             <div class="swiper-slide"><img src="assets/partner-3.svg" alt=""></div>
             <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
         </div>
-        <div class="swiper-pagination"></div>
     </section>
     <section class="container-4">
         <div class="right">
@@ -178,6 +177,33 @@
             <img src="assets/marketing_consulting.png" alt="">
         </div>
     </section>
+    <section class="container-5">
+        <div class="top">
+            <div class="left">
+                <span>Recent Projects</span>
+                <h1>Reach New Heights with
+                    Digital Marketing</h1>
+            </div>
+            <div class="right">
+                <img src="assets/arrow-left.svg" alt="" style="transform-origin: right center;">
+                <img src="assets/arrow-right.svg" alt="" style="transform-origin: left center;">
+            </div>
+        </div>
+        <div class="bottom">
+            <section class="swiper imgSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/project-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/project-4.png" alt=""></div>
+                </div>
+            </section>
+        </div>
+    </section>
 
 
     <!-- JavaScript -->
@@ -198,6 +224,23 @@
             speed: 5000,
             grabCursor: true,
             loopAdditionalSlides: 2,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".imgSwiper", {
+            loop: true,
+            freeMode: true,
+            autoplay: {
+                delay: 2000,
+                // pauseOnMouseEnter:true,
+                disableOnInteraction: false,
+            },
+            loopAddBlankSlides: true,
+            cssMode: true,
+            slidesPerView: 4,
+            speed: 4000,
+            grabCursor: true,
+            loopAdditionalSlides: 1,
         });
     </script>
 </body>

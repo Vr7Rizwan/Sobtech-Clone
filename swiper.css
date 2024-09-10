@@ -24,3 +24,18 @@
     filter: contrast(100%);
   }
 
+  .imgSwiper{
+    background-color: transparent;
+    padding: 0;
+  }
+  .imgSwiper .swiper-slide{
+    background-color: transparent;
+    display: flex;
+    gap: 12rem;
+  }
+  .imgSwiper .swiper-slide img{
+    filter: contrast(100%);
+    height: 50.6562rem;
+    width: 36.825rem;
+  }
+
