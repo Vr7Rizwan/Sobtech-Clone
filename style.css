@@ -468,3 +468,14 @@ nav ul li>a:hover::before {
         top: 75%;
     }
 }
+@media screen and (min-width: 1601px) {
+    .icons-rotate{
+        max-width: 1265px;
+        max-height: 1265px;
+        /* max-height: 80vw; */
+    }
+    .semi-circle{
+        max-width: 759px;
+        max-height: 759px;
+    }
+}

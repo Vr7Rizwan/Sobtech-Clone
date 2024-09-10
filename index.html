@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobtech - IT Solutions and Services</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
 </head>
 
 <body>
@@ -110,14 +112,56 @@
                 <p>Et purus duis sollicitudin dignissim habitant</p>
             </span>
             <span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" bis_size="{&quot;x&quot;:21,&quot;y&quot;:2601,&quot;w&quot;:16,&quot;h&quot;:16,&quot;abs_x&quot;:21,&quot;abs_y&quot;:2656}">
-                    <path d="M7.59375 10.625C7.25 10.9688 6.71875 10.9688 6.375 10.625L4.375 8.625C4.03125 8.28125 4.03125 7.75 4.375 7.40625C4.71875 7.0625 5.25 7.0625 5.59375 7.40625L7 8.78125L10.375 5.40625C10.7188 5.0625 11.25 5.0625 11.5938 5.40625C11.9375 5.75 11.9375 6.28125 11.5938 6.625L7.59375 10.625ZM16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8ZM8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5Z" fill="#FC0012" bis_size="{&quot;x&quot;:21,&quot;y&quot;:2601,&quot;w&quot;:16,&quot;h&quot;:16,&quot;abs_x&quot;:21,&quot;abs_y&quot;:2656}"></path>
-                  </svg>
-                  <p>venenatis cras sed eu massa eu faucibus uis
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    bis_size="{&quot;x&quot;:21,&quot;y&quot;:2601,&quot;w&quot;:16,&quot;h&quot;:16,&quot;abs_x&quot;:21,&quot;abs_y&quot;:2656}">
+                    <path
+                        d="M7.59375 10.625C7.25 10.9688 6.71875 10.9688 6.375 10.625L4.375 8.625C4.03125 8.28125 4.03125 7.75 4.375 7.40625C4.71875 7.0625 5.25 7.0625 5.59375 7.40625L7 8.78125L10.375 5.40625C10.7188 5.0625 11.25 5.0625 11.5938 5.40625C11.9375 5.75 11.9375 6.28125 11.5938 6.625L7.59375 10.625ZM16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0C12.4062 0 16 3.59375 16 8ZM8 1.5C4.40625 1.5 1.5 4.4375 1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5Z"
+                        fill="#FC0012"
+                        bis_size="{&quot;x&quot;:21,&quot;y&quot;:2601,&quot;w&quot;:16,&quot;h&quot;:16,&quot;abs_x&quot;:21,&quot;abs_y&quot;:2656}">
+                    </path>
+                </svg>
+                <p>venenatis cras sed eu massa eu faucibus uis
                 </p>
             </span>
         </div>
     </section>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-2.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-3.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-2.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-3.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/partner-1.svg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            freeMode: true,
+            autoplay: {
+                delay: 2000,
+                // pauseOnMouseEnter:true,
+                disableOnInteraction: false,
+            },
+            loopAddBlankSlides: true,
+            cssMode: true,
+            slidesPerView: 7,
+            speed: 5000,
+            grabCursor: true,
+            loopAdditionalSlides: 2,
+        });
+    </script>
 </body>
 
 </html>
