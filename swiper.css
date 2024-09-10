@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     padding: 4rem;
+    z-index: 0;
   }
 
   .swiper-slide {
@@ -30,12 +31,8 @@
   }
   .imgSwiper .swiper-slide{
     background-color: transparent;
-    display: flex;
-    gap: 12rem;
   }
   .imgSwiper .swiper-slide img{
     filter: contrast(100%);
-    height: 50.6562rem;
-    width: 36.825rem;
   }
 

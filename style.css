@@ -464,6 +464,41 @@ nav ul li>a:hover::before {
     cursor: pointer;
     transform: scaleX(1.2);
 }
+.imgSwiper .swiper-slide{
+    position: relative;
+}
+.imgSwiper .swiper-slide img{
+    height: 50.6562rem;
+    width: 36.825rem;
+}
+.swiper-slide > div{
+    position: absolute;
+    left: 1.35rem;
+    bottom: 3rem;
+    background-color: white;
+    width: 0;
+    height: 0;
+    padding: 2rem;
+    border-right: 0.5rem solid rgb(236, 72, 20);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.2s;
+}
+.swiper-slide > div h1{
+    color: #333;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.swiper-slide > div span{
+    color: #333;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.swiper-slide:hover > div{
+    width: 85%;
+    height: 10rem;
+}
 
 /* Media Queries */
 @media screen and (max-width:1300px) {
