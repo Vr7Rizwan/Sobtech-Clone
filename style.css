@@ -419,23 +419,25 @@ nav ul li>a:hover::before {
     width: 40%;
 }
 .container-5{
+    margin: 4rem 0;
+}
+.subContainer{
     height: 58.2562rem;
     background-color: #0E191E;
-    /* padding: 12rem 0; */
     margin: auto;
 }
-.container-5 .top{
+.subContainer .top{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 12rem 0 6rem 0;
 }
-.container-5 .top .left{
+.subContainer .top .left{
     background-color: transparent;
     flex-direction: column;
 }
-.container-5 .top .left span{
+.subContainer .top .left span{
     color: rgb(236 72 20);
     font-size: 2rem;
     line-height: 2.8rem;
@@ -444,37 +446,39 @@ nav ul li>a:hover::before {
     width: 100%;
     text-align: left;
 }
-.container-5 .top .left h1{
+.subContainer .top .left h1{
     color: white;
     font-size: 4rem;
     font-weight: 900;
     line-height: 4.5rem;
     margin-top: 1.8rem;
 }
-.container-5 .right{
+.subContainer .right{
     flex-direction: row;
     justify-content: flex-end;
 }
-.container-5 .top .right img{
+.subContainer .top .right img{
     width: 8.1rem;
     margin: 0.5rem;
     transition: all 0.3s;
 }
-.container-5 .top .right img:hover{
+.subContainer .top .right img:hover{
     cursor: pointer;
     transform: scaleX(1.2);
 }
 .imgSwiper .swiper-slide{
     position: relative;
+    overflow: hidden;
 }
 .imgSwiper .swiper-slide img{
     height: 50.6562rem;
     width: 36.825rem;
 }
 .swiper-slide > div{
+    height: 10rem;
     position: absolute;
-    left: 1.35rem;
-    bottom: 3rem;
+    left: -13rem;
+    bottom: 13rem;
     background-color: white;
     width: 0;
     height: 0;
@@ -482,7 +486,7 @@ nav ul li>a:hover::before {
     border-right: 0.5rem solid rgb(236, 72, 20);
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 .swiper-slide > div h1{
     color: #333;
@@ -498,7 +502,94 @@ nav ul li>a:hover::before {
 .swiper-slide:hover > div{
     width: 85%;
     height: 10rem;
+    left: 1.35rem;
+    bottom: 3rem;
 }
+.container-6{
+    margin-top: 30rem;
+    background-color: rgb(247, 247, 247);
+}
+.container-6 .top{
+    width: 80%;
+    margin: auto;
+}
+.container-6 .top span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: rgb(236, 72, 20);
+}
+.container-6 .top h1{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+    margin-top: 1.8rem;
+    text-align: center;
+    width: 50%;
+    margin: 1.8rem auto;
+}
+.container-6 .bottom{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container-6 .bottom .cards{
+    background: none;
+    width: 90%;
+    margin: auto;
+    margin: 0;
+    padding: 2rem;
+    background-color: white;
+}
+.container-6 .bottom .cards .top{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container-6 .bottom .cards .top .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+.container-6 .bottom .cards .top .top h1{
+    margin: 0;
+    text-align: left;
+    font-size: 3rem;
+}
+.container-6 .bottom .cards .top .top span{
+    font-weight: 100;
+    color: #333;
+}
+.container-6 .bottom .cards .top .bottom{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.container-6 .bottom .cards .top{
+    display: flex;
+    flex-direction: column;
+}
+.container-6 .bottom .cards > .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+.container-6 .bottom .cards > .bottom .features{
+    display: flex;
+    gap: 2rem;
+}
+.container-6 .bottom .cards > .bottom .features span{
+    font-size: 1.75rem;
+}
+
 
 /* Media Queries */
 @media screen and (max-width:1300px) {
