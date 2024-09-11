@@ -40,11 +40,14 @@
     background-color: transparent;
     padding: 0;
     height: 50vh;
+    position: relative;
+    top: -20rem;
+    z-index: 5;
   }
-  .webDesigner .swiper-slide-2{
+  .webDesigner .swiper-slide{
     background-color: transparent;
   }
-  .webDesigner .swiper-slide-2 img{
+  .webDesigner .swiper-slide img{
     filter: contrast(100%);
   }
 

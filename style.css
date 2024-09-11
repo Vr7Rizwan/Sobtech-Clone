@@ -673,7 +673,7 @@ nav ul li>a:hover::before {
     height: 35rem;
     margin: auto;
     display: flex;
-    margin-top: -20rem;
+
 }
 .slide .left{
     width: 75%;
