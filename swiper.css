@@ -36,3 +36,15 @@
     filter: contrast(100%);
   }
 
+  .webDesigner{
+    background-color: transparent;
+    padding: 0;
+    height: 50vh;
+  }
+  .webDesigner .swiper-slide-2{
+    background-color: transparent;
+  }
+  .webDesigner .swiper-slide-2 img{
+    filter: contrast(100%);
+  }
+
