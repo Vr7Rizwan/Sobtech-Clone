@@ -42,7 +42,6 @@
     height: 50vh;
     position: relative;
     top: -20rem;
-    z-index: 5;
   }
   .webDesigner .swiper-slide{
     background-color: transparent;
