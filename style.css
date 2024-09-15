@@ -911,6 +911,78 @@ nav ul li>a:hover::before {
     align-items: center;
     gap: 1rem;
 }
+.container-10{
+    width: 80%;
+    margin: auto;
+    padding: 10rem 0; 
+    display: flex;
+}
+.container-10 .left{
+    background-color: transparent;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.container-10 .left span{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: rgb(236, 72, 20);
+}
+.container-10 .left .exp{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+    background-color: rgb(255, 250, 240);
+    border-radius: 2rem;
+    width: 28.02rem;
+}
+.container-10 .left > h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.container-10 .left p{
+    font-size: 1.8rem;
+    color: rgb(91, 91, 91);
+}
+.container-10 .left .exp h1{
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.accordion summary{
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 250, 240);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+.plus{
+    color: white;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgb(236, 72, 20);
+}
+summary::marker{
+    content: "";
+}
 /* Media Queries */
 @media screen and (max-width:1300px) {
     header {
