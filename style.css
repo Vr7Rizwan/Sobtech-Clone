@@ -862,8 +862,8 @@ nav ul li>a:hover::before {
     line-height: 4.5rem;
 }
 .container-9 .bottom{
-    width: 80%;
-    margin: auto;
+    /* width: 80%;
+    margin: auto; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -1003,10 +1003,33 @@ footer .top{
     grid-template-columns: 2fr 1fr 1fr 2fr;
 }
 .socials a{
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     border: 0.5px solid white;
     padding: 0.8rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.socials a::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 72, 20);
+    z-index: -1;
+    transition: all 0.5s;
+}
+.socials a:hover::before{
+    right: 0;
 }
 .sections{
     width: 80%;
